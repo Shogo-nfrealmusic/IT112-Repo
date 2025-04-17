@@ -1,0 +1,32 @@
+<!-- templates/fortune_form.html -->
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Fortune Teller</title>
+</head>
+<body>
+    <h1>Let's read today's fortune.</h1>
+    <form method="POST" action="/fortune">
+        <label>Name:</label>
+        <input type="text" name="user" required><br><br>
+
+        <label>Chose color:</label>
+        <select name="color">
+            <option>red</option>
+            <option>yellow</option>
+            <option>blue</option>
+            <option>green</option>
+        </select><br><br>
+
+        <label>Chose number:</label>
+        <select name="number">
+            <option>1</option>
+            <option>2</option>
+            <option>3</option>
+            <option>4</option>
+        </select><br><br>
+
+        <button type="submit">Divination!</button>
+    </form>
+</body>
+</html>
