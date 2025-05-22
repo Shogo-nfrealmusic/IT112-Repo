@@ -1,0 +1,22 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>My Django Site</title>
+    <link rel="stylesheet" href="{% static 'styles.css' %}">
+</head>
+<body>
+    <h1>
+        {% if user_name %}
+            Hello, {{ user_name }}!
+        {% else %}
+            Welcome to my website!
+        {% endif %}
+    </h1>
+
+    <div style="text-align: center;">
+        <img src="{% static 'myimage.png' %}" alt="Main Image" width="400">
+    </div>
+</body>
+</html>
